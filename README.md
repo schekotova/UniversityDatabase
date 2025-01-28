@@ -1,4 +1,4 @@
-# University database
+# University Database
 
 ## Overview
 
