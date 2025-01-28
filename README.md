@@ -4,6 +4,10 @@
 
 > The objective was to design and implement a comprehensive database system for a university. This system is intended to manage extensive data involving departments, faculties, professors, students, and their associated academic activities such as lessons and grades.
 
+
+![Tables Creation](https://github.com/schekotova/UniversityDatabase/blob/master/queries/tables.sql)
+![Views Creation](https://github.com/schekotova/UniversityDatabase/blob/master/queries/views.sql)
+![Triggers Creation](https://github.com/schekotova/UniversityDatabase/blob/master/queries/triggers.sql)
 ## Database Schema and Implementation Details
 ![alt](https://github.com/schekotova/UniversityDatabase/blob/master/pictures/diagram.jpg)
 ### **`Faculty`**
@@ -58,7 +62,6 @@ Combines lesson schedules with detailed subject and faculty information.
 Calculates and displays the average grades for subjects, providing insights into student performance.
 ![alt](https://github.com/schekotova/UniversityDatabase/blob/master/pictures/SubjectProficiency.png)
 ## **Triggers**
-
 -   `trg_professor_audit`
     Monitors changes in `professor` records (`name`, `surname`, `email`) and logs these changes for auditing purposes. It uses SQL triggers to automatically capture changes when updates occur.
 
