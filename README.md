@@ -5,7 +5,7 @@
 > The objective was to design and implement a comprehensive database system for a university. This system is intended to manage extensive data involving departments, faculties, professors, students, and their associated academic activities such as lessons and grades.
 
 ## Database Schema and Implementation Details
-
+![alt](https://github.com/schekotova/UniversityDatabase/blob/master/pictures/diagram.jpg)
 ### **`Faculty`**
 
 This table is critical for representing different faculties within the university. Each faculty is uniquely identified by an `id` and has a `name`, `foundation_date`, and a `dean_id` which links to a professor acting as the dean. The uniqueness of the dean is ensured, meaning no dean can oversee more than one faculty.
@@ -37,33 +37,26 @@ Grades are recorded with `id`, `year`, `term`, `grade`, `professor_id`, `subject
 ## **Views**
 
 ### `View_SubjectDetails`
-
 Consolidates subjects with their respective faculties and lecture hours for easy access.
-
+![alt](https://github.com/schekotova/UniversityDatabase/blob/master/pictures/SubjectDetails.png)
 ### `View_ProfessorDetails`
-
 Aggregates professor information along with their department and faculty affiliations.
-
+![alt](https://github.com/schekotova/UniversityDatabase/blob/master/pictures/ProfessorDetails.png)
 ### `View_StudentEnrollment`
-
 Displays students, the courses they are enrolled in, and their department and subject details.
-
+![alt](https://github.com/schekotova/UniversityDatabase/blob/master/pictures/StudentEnrollment.png)
 ### `View_LessonSchedule`
-
 Provides a weekly schedule of lessons, including the day, time, term, and involved professor and subject details.
-
+![alt](https://github.com/schekotova/UniversityDatabase/blob/master/pictures/LessonShedule.png)
 ### `View_StudentContacts`
-
 Lists student contact information along with their department.
-
+![alt](https://github.com/schekotova/UniversityDatabase/blob/master/pictures/StudentContacts.png)
 ### `View_DetailedLessonPlans`
-
 Combines lesson schedules with detailed subject and faculty information.
-
+![alt](https://github.com/schekotova/UniversityDatabase/blob/master/pictures/DetailedLessonPlan.png)
 ### `View_SubjectProficiency`
-
 Calculates and displays the average grades for subjects, providing insights into student performance.
-
+![alt](https://github.com/schekotova/UniversityDatabase/blob/master/pictures/SubjectProficiency.png)
 ## **Triggers**
 
 -   `trg_professor_audit`
